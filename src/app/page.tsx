@@ -9,6 +9,7 @@ import { ExpandingCards, CardItem } from '@/components/expanding-cards';
 import { TestimonialSection, Testimonial } from '@/components/testimonials';
 import { LogoCloud } from '@/components/logo-cloud-4';
 import { ProfileCarousel, TeamMember } from '@/components/profile-card-testimonial-carousel';
+import { SectionDivider, AccentLine } from '@/components/section-divider';
 import { Brain, Heart, Users, Utensils, Sparkles, HeartHandshake } from 'lucide-react';
 
 // Unsplash images - tropical La Réunion vibes
@@ -496,8 +497,13 @@ export default function Home() {
               </motion.div>
             </section>
 
+            {/* ========== DIVIDER: Hero → Introduction ========== */}
+            <SectionDivider variant="curve" color="var(--empc-background)" height={100} />
+
             {/* ========== INTRODUCTION - Texte complet du client ========== */}
             <AnimatedSection className="py-32 relative overflow-hidden" id="discover">
+              {/* Liseré décoratif gold */}
+              <AccentLine color="var(--empc-gold)" position="top" thickness={3} variant="straight" />
               {/* Background decoration */}
               <div className="absolute top-0 right-0 w-1/2 h-full opacity-5">
                 <Image src={IMAGES.tropical} alt="" fill className="object-cover" />
@@ -616,8 +622,11 @@ export default function Home() {
               </div>
             </AnimatedSection>
 
+            {/* ========== DIVIDER: Introduction → Services ========== */}
+            <SectionDivider variant="diagonal-down" color="var(--empc-sage)" height={80} className="opacity-10" />
+
             {/* ========== SERVICES - Expanding Cards ========== */}
-            <AnimatedSection className="py-32 bg-gradient-tropical">
+            <AnimatedSection className="py-32 bg-gradient-tropical clip-diagonal-top">
               <div className="container-wide">
                 {/* Section header */}
                 <motion.div
@@ -672,8 +681,13 @@ export default function Home() {
               </div>
             </AnimatedSection>
 
+            {/* ========== DIVIDER: Services → Logo Cloud ========== */}
+            <SectionDivider variant="wave" color="var(--empc-cream)" height={60} />
+
             {/* ========== LOGO CLOUD - Certifications ========== */}
-            <AnimatedSection className="py-16 bg-[var(--empc-cream)]">
+            <AnimatedSection className="py-16 bg-[var(--empc-cream)] corner-tl-rounded-xl corner-br-rounded-xl relative">
+              {/* Liseré gauche gold */}
+              <AccentLine color="var(--empc-gold)" position="left" thickness={4} variant="straight" offset="0" />
               <div className="container-wide">
                 <motion.p
                   initial={{ opacity: 0 }}
@@ -687,8 +701,11 @@ export default function Home() {
               </div>
             </AnimatedSection>
 
+            {/* ========== DIVIDER: Logo Cloud → Meditation ========== */}
+            <SectionDivider variant="diagonal-up" color="var(--empc-background)" height={80} />
+
             {/* ========== MEDITATION - Full width immersive ========== */}
-            <section className="relative min-h-screen flex items-center py-32 overflow-hidden">
+            <section className="relative min-h-screen flex items-center py-32 overflow-hidden corner-tr-rounded-xl">
               {/* Parallax background */}
               <ParallaxImage
                 src={IMAGES.meditation}
@@ -765,23 +782,38 @@ export default function Home() {
               </div>
             </section>
 
+            {/* ========== DIVIDER: Meditation → Équipe ========== */}
+            <SectionDivider variant="curve-reverse" color="var(--empc-background)" height={90} />
+
             {/* ========== ÉQUIPE - Profile Carousel ========== */}
             <ProfileCarousel
               members={teamMembers}
               title="Notre équipe"
               subtitle="Des professionnels qualifiés et bienveillants pour vous accompagner"
-              className="bg-[var(--empc-background)]"
+              className="bg-[var(--empc-background)] corner-bl-rounded-xl"
             />
+
+            {/* ========== DIVIDER: Équipe → Testimonials ========== */}
+            <SectionDivider variant="diagonal-down" color="var(--empc-cream)" height={70} />
 
             {/* ========== TESTIMONIALS - Témoignages patients ========== */}
-            <TestimonialSection
-              title="Ce qu'ils disent"
-              subtitle="Témoignages de nos patients sur leur parcours thérapeutique"
-              testimonials={testimonials}
-            />
+            <div className="bg-[var(--empc-cream)] corner-tl-rounded-xl corner-br-rounded-xl relative">
+              {/* Liseré supérieur gold */}
+              <AccentLine color="var(--empc-gold)" position="top" thickness={3} variant="diagonal" />
+              <TestimonialSection
+                title="Ce qu'ils disent"
+                subtitle="Témoignages de nos patients sur leur parcours thérapeutique"
+                testimonials={testimonials}
+              />
+            </div>
+
+            {/* ========== DIVIDER: Testimonials → Contact ========== */}
+            <SectionDivider variant="wave" color="var(--empc-background)" height={80} />
 
             {/* ========== CONTACT - Dramatic ========== */}
-            <AnimatedSection className="py-32 relative overflow-hidden" id="contact">
+            <AnimatedSection className="py-32 relative overflow-hidden corner-tr-rounded-xl" id="contact">
+              {/* Liseré droit gold */}
+              <AccentLine color="var(--empc-gold)" position="right" thickness={4} variant="straight" />
               {/* Animated background */}
               <motion.div
                 className="absolute inset-0 opacity-5"

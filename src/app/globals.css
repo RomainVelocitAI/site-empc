@@ -563,6 +563,162 @@ h3 {
 }
 
 /* ============================================
+   Asymmetric Sections - Inspired by yasmina-incana.netlify.app
+   ============================================ */
+
+/* Base section with asymmetric capabilities */
+.section-asymmetric {
+  position: relative;
+  overflow: visible;
+}
+
+/* Section with colored background - primary olive */
+.section-colored-primary {
+  background-color: var(--empc-primary);
+  color: white;
+}
+
+.section-colored-primary h1,
+.section-colored-primary h2,
+.section-colored-primary h3 {
+  color: white;
+}
+
+/* Section with cream background */
+.section-colored-cream {
+  background-color: var(--empc-cream);
+}
+
+/* Section with sage tint */
+.section-colored-sage {
+  background-color: rgba(156, 175, 136, 0.1);
+}
+
+/* Asymmetric corner styles - single rounded corner */
+.corner-tl-rounded {
+  border-top-left-radius: 3rem;
+}
+
+.corner-tr-rounded {
+  border-top-right-radius: 3rem;
+}
+
+.corner-bl-rounded {
+  border-bottom-left-radius: 3rem;
+}
+
+.corner-br-rounded {
+  border-bottom-right-radius: 3rem;
+}
+
+/* Large asymmetric corners */
+.corner-tl-rounded-xl {
+  border-top-left-radius: 5rem;
+}
+
+.corner-tr-rounded-xl {
+  border-top-right-radius: 5rem;
+}
+
+.corner-bl-rounded-xl {
+  border-bottom-left-radius: 5rem;
+}
+
+.corner-br-rounded-xl {
+  border-bottom-right-radius: 5rem;
+}
+
+/* Offset sections - break the grid */
+.section-offset-left {
+  margin-left: -3vw;
+  padding-left: calc(3vw + 1rem);
+  width: calc(100% + 3vw);
+}
+
+.section-offset-right {
+  margin-right: -3vw;
+  padding-right: calc(3vw + 1rem);
+  width: calc(100% + 3vw);
+}
+
+/* Diagonal clip-paths for sections */
+.clip-diagonal-top {
+  clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
+}
+
+.clip-diagonal-bottom {
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+}
+
+.clip-diagonal-both {
+  clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+}
+
+/* Inset colored block - yasmina-incana style */
+.section-inset {
+  position: relative;
+}
+
+.section-inset::before {
+  content: '';
+  position: absolute;
+  top: 2rem;
+  bottom: 2rem;
+  left: 5%;
+  right: 0;
+  background-color: var(--empc-primary);
+  border-top-left-radius: 3rem;
+  border-bottom-left-radius: 3rem;
+  z-index: -1;
+}
+
+.section-inset-right::before {
+  left: 0;
+  right: 5%;
+  border-radius: 0;
+  border-top-right-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+}
+
+/* Responsive adjustments for asymmetric styles */
+@media (max-width: 768px) {
+  .section-offset-left,
+  .section-offset-right {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100%;
+  }
+
+  .corner-tl-rounded,
+  .corner-tr-rounded,
+  .corner-bl-rounded,
+  .corner-br-rounded {
+    border-radius: 1.5rem;
+  }
+
+  .corner-tl-rounded-xl,
+  .corner-tr-rounded-xl,
+  .corner-bl-rounded-xl,
+  .corner-br-rounded-xl {
+    border-radius: 2rem;
+  }
+
+  .clip-diagonal-top {
+    clip-path: polygon(0 3%, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .clip-diagonal-bottom {
+    clip-path: polygon(0 0, 100% 0, 100% 97%, 0 100%);
+  }
+
+  .clip-diagonal-both {
+    clip-path: polygon(0 3%, 100% 0, 100% 97%, 0 100%);
+  }
+}
+
+/* ============================================
    Scroll-Triggered Reveal Classes
    (Applied via JS/Framer Motion)
    ============================================ */
