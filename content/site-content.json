@@ -1,0 +1,325 @@
+{
+  "site": {
+    "name": "EMPC",
+    "fullName": "Espace Médical de Psychothérapies et de Travail Corporel Associé",
+    "domain": "empc.re",
+    "location": "La Réunion",
+    "contact": {
+      "name": "Dr Joëlle DEBLANGEY",
+      "phone": "0692 46 07 89",
+      "phoneType": "SMS"
+    }
+  },
+  "pages": {
+    "home": {
+      "title": "Accueil",
+      "heroTitle": "Espace Médical de Psychothérapies et de Travail Corporel Associé",
+      "heroSubtitle": "Un lieu de soin holistique à La Réunion",
+      "introText": "Il vous sera possible dans cet Espace d'articuler vos entretiens individuels, vos suivis familiaux ou conjugaux et vos disciplines corporelles (protocole de méditation MBCT et MECL - manger et vivre en pleine conscience).\n\nL'indication en sera posée et proposée lors de temps d'échanges entre les différents professionnels, respectant la confidentialité.\n\nVotre référent (personne qui vous a adressé : psychiatre, psychologue, généraliste…) en sera averti avec votre accord.\n\nJe vous laisse découvrir ce lieu et ses consultants en psychologie et intervenants des disciplines corporelles associées où vous pourrez apprendre à vous sentir en harmonie quelle que soit l'approche utilisée.",
+      "signature": "Dr Joëlle DEBLANGEY"
+    },
+    "drDeblangey": {
+      "title": "Dr Joëlle DEBLANGEY",
+      "contact": "0692 46 07 89 (SMS)",
+      "parcoursProfessionnel": [
+        {
+          "period": "1981-1991",
+          "description": "10 ans de Médecine générale en remplacement. Thèse de doctorat en Médecine sur le Diabète à la Réunion."
+        },
+        {
+          "period": "1991",
+          "description": "Création à St-Paul : cabinet libéral en Homéopathie (DU faculté de Bordeaux 2 en 1989), Médecine du sport (CES) et Nutrition (DU de diététique et d'hygiène alimentaire en 1986)."
+        },
+        {
+          "period": "1991-2001",
+          "description": "Création, Présidence et Enseignement à l'association SHOI pour l'Enseignement de l'Homéopathie à la Réunion et à Madagascar pendant 10 ans."
+        }
+      ],
+      "formations": [
+        {
+          "period": "1999-2001",
+          "title": "Analyse Transactionnelle",
+          "description": "2 ans d'Analyse Transactionnelle en travail groupal"
+        },
+        {
+          "period": "2001-2004",
+          "title": "Thérapie Comportementale et Cognitive",
+          "description": "Diplôme de TCC en 3 ans (membre de l'Association Française de TCC). Mémoire sur « les troubles du comportement alimentaire traités par les TCC »."
+        },
+        {
+          "period": "2000-2007",
+          "title": "Gestalt Thérapie",
+          "description": "Formation à l'Institut Français de Gestalt thérapie, diplômée en novembre 2007. Mémoire de 3ème cycle : « Confluence et Différenciation »."
+        },
+        {
+          "period": "2009-2012",
+          "title": "Thérapie Systémique",
+          "description": "Thérapeute Systémicienne Familiale et Conjugale (IDES). Mémoire sur « l'utilisation du jeu de loi dans la relation d'emprise »."
+        },
+        {
+          "period": "2007-2011",
+          "title": "Sexologie",
+          "description": "Diplôme de Médecin Sexologue à La Faculté de médecine de Lille/Amiens, obtenu en octobre 2012. Membre de l'association SEXO974."
+        }
+      ],
+      "activitesActuelles": [
+        "2012 : création de l'EMPC",
+        "Instructrice certifiée MBCT niveau 3",
+        "Protocole MECL « Manger et vivre en pleine conscience »"
+      ],
+      "atelierMBCT": {
+        "description": "Atelier Méditation MBCT pour Avancés : spécialement conçu pour ceux ayant validé le niveau 1 MBCT",
+        "quand": "Tous les mercredis de 18h à 20h",
+        "tarif": "40 € par participant (minimum 5 participants)"
+      }
+    },
+    "gestalt": {
+      "title": "La Gestalt-Thérapie",
+      "slug": "/therapies/gestalt",
+      "introduction": "Découvrir ce que nous ressentons et ce dont nous avons besoin, c'est quelque chose d'essentiel pour la survie, pour la vie et pour un développement harmonieux, satisfaisant et plein.",
+      "definition": "Le terme Gestalt vient d'un verbe allemand gestalten qui correspond à l'idée de « mettre en forme, donner une structure ». Gestalt-Thérapie signifie donc la thérapie des formes que chacun donne à son existence, à ses contacts, à ses relations, à ses actes.",
+      "approche": "Dans le huis clos de notre entretien, vous ne serez pas seul(e) à avancer vers le changement. Nous élaborerons ensemble plusieurs hypothèses, mettant en forme grâce à mon aide et mon ressenti en votre présence les différentes pensées, émotions, besoins, senti, sensations corporelles, intuitions qui traverseront le champ de la séance.",
+      "axes": [
+        {
+          "title": "Regarder la manière dont l'expérience passée conditionne l'expérience actuelle",
+          "description": "Ce passé revécu dans la séance sera remis dans le présent de façon à correspondre à vos besoins actuels."
+        },
+        {
+          "title": "Valoriser l'importance et la nouveauté de l'expérience actuelle",
+          "description": "Utilisation de diverses expérimentations sous forme de jeux, exercices, supports d'expression (art thérapie), mises en scène, psychodrames et la fameuse « chaise vide »."
+        },
+        {
+          "title": "Inscrire l'expérience thérapeutique dans une perspective de CHAMP",
+          "description": "Le champ est constitué de tout ce qui est pertinent pour un sujet à un moment donné, ce qui affecte son expérience."
+        }
+      ],
+      "pratique": [
+        "Travail individuel",
+        "Travail de groupe : Méditation/pleine conscience guidée",
+        "Travail de groupe : Comportement alimentaire"
+      ],
+      "indications": [
+        "Mal-être général",
+        "Problèmes de couple (emprise ou autre)",
+        "Problèmes sexuels",
+        "Troubles du comportement alimentaire",
+        "Névroses phobiques, obsessionnelles",
+        "Troubles anxieux généralisés",
+        "Attaques de panique",
+        "Dépression réactionnelle ou chronique",
+        "Stress post traumatique",
+        "Syndromes maniaco-dépressifs ou bipolaires"
+      ],
+      "tarif": {
+        "prix": 75,
+        "duree": "55 min",
+        "note": "avec une feuille de soins qui permettra éventuellement une partie de prise en charge selon votre mutuelle (médecin secteur 3 déconventionnée)"
+      },
+      "references": [
+        "« Gestalt-thérapie » - Perls, Hefferline et Goodman (1951)",
+        "« Le grand livre de la Gestalt thérapie » - collectif C. G. Masquelier, Eyrolles (2012)",
+        "« Emotions, sentiments et besoins, une approche humaniste » - Myriam Munoz Polit (2011)"
+      ]
+    },
+    "nutritionComportementale": {
+      "title": "Les séances de Nutrition Comportementale",
+      "slug": "/therapies/nutrition",
+      "introduction": "Voyant l'échec à long terme des régimes équilibrés classiques, revoyant les patients qui ont regrossi suite à un régime bien conduit, je me suis intéressée aux Thérapies comportementales et cognitives pour les troubles du Comportement Alimentaire.",
+      "indications": [
+        "Boulimie",
+        "Hyperphagie",
+        "Anorexie (avec suivi systémique familial conseillé et psychothérapie associées)",
+        "Échec des régimes de toute sorte à répétition avec obsession du poids",
+        "Orthorexie (sélection des aliments très rigide)"
+      ],
+      "objectif": "Votre poids, conséquence de votre comportement alimentaire, se normalisera vers la fin des séances, et surtout ne sera plus votre obsession!",
+      "contenuSeances": [
+        "Retrouver votre véritable FAIM physique, et non psychique",
+        "Établir votre échelle de Faim physique avec vos différents symptômes corporels",
+        "Séances de HATHA YOGA et YOGA NIDRA",
+        "ESPACES DE RESPIRATION MEDITATIVE",
+        "Recueil des situations à risque de MANGER SANS FAIM",
+        "Travail sur les sensations de satiété, le goût et le plaisir des aliments"
+      ],
+      "organisation": {
+        "duree": "environ une demi heure",
+        "rythme": "conseillé tous les 15 jours",
+        "nombreSeances": "environ 10 séances pour un adulte, moins pour l'enfant et l'adolescent (à partir de 10 ans)"
+      },
+      "reference": {
+        "nom": "GROS - Groupe de Réflexion sur l'Obésité et le Surpoids",
+        "url": "www.gros.org"
+      }
+    },
+    "mbct": {
+      "title": "La Méditation de pleine conscience MBCT",
+      "slug": "/groupal/mbct",
+      "definition": "La Mindfulness Based Cognitive Therapy (MBCT), en français « Thérapie Cognitive basée sur la Pleine Conscience », est une approche de groupe développée par Zindel Segal, John Teasdale et Mark Williams.",
+      "objectif": "La MBCT est destinée à prévenir les rechutes dépressives chez les patients en rémission d'une dépression unipolaire récurrente.",
+      "indicationsMedicales": [
+        "Prévention de la rechute dépressive",
+        "Troubles anxieux et phobiques",
+        "Troubles du comportement alimentaire",
+        "Addictions (jeu, alcool, produits psycho-actifs, sexe, cyber addictions)",
+        "Troubles du contrôle des impulsions",
+        "Effondrement professionnel"
+      ],
+      "organisation": {
+        "seances": 8,
+        "duree": "2h30 par séance",
+        "frequence": "espacées de 8 jours",
+        "horaires": "vendredis 18h-20h30 ou samedis 10h-12h30",
+        "tarif": 80,
+        "total": 640
+      },
+      "prerequis": "L'inclusion au groupe est soumise à un entretien préalable.",
+      "reference": "mbct-france.fr"
+    },
+    "mecl": {
+      "title": "MECL - Manger et Vivre en pleine conscience",
+      "slug": "/groupal/mecl",
+      "subtitle": "Protocole de méditation adaptée aux troubles du comportement alimentaire",
+      "pourQui": [
+        "Troubles du Comportement Alimentaire",
+        "Boulimiques",
+        "Hyperphagiques",
+        "Alimentation compulsive",
+        "Suites Chirurgicales de l'Estomac sans amélioration",
+        "Poursuite de Régimes sans résultat"
+      ],
+      "description": "Huit séances inspirées du niveau 1 de la formation « Mindful Eating-Conscious Living » qui s'appuient sur la méditation pleine conscience, associée à l'acte de manger.",
+      "contenu": [
+        "Petit groupe (de 4 à 9 participants)",
+        "Être présent au niveau des pensées, des émotions et du ressenti corporel : faim physique et satiété",
+        "Expérimentations spécifiques alimentaires",
+        "Méditations adaptées",
+        "Mouvements corporels en conscience",
+        "Partages bienveillants"
+      ],
+      "organisation": {
+        "seances": 8,
+        "frequence": "espacées de 8 jours",
+        "tarif": 560,
+        "inclus": "journée de pleine conscience avec repas partagé de 10h à 16h"
+      },
+      "reference": "www.mecl.com"
+    },
+    "locationPro": {
+      "title": "Location aux professionnels",
+      "slug": "/location",
+      "accroche": "Vous avez besoin d'un espace de travail confortable dans un environnement paisible et revigorant ?",
+      "espaces": [
+        {
+          "nom": "Bungalow privatif",
+          "surface": "16m²",
+          "equipements": ["meublé", "WC", "douche"]
+        },
+        {
+          "nom": "Bureau",
+          "surface": "12m²",
+          "equipements": ["meublé", "grande salle de bain attenante avec lavabo, WC et baignoire"]
+        },
+        {
+          "nom": "Salle de travail",
+          "surface": null,
+          "equipements": [
+            "20 chaises + 10 emplacements tapis de sol",
+            "écran blanc + équipement numérique",
+            "bar",
+            "cuisine équipée",
+            "grande salle de bain avec douche, lavabo, WC et baignoire"
+          ]
+        },
+        {
+          "nom": "Terrasse en caillebotis",
+          "surface": null,
+          "equipements": [
+            "sanitaires attenants",
+            "10 emplacements tapis pour cours de yoga, méditation, sophrologie, etc."
+          ]
+        }
+      ],
+      "formules": ["Location ponctuelle", "Location régulière", "À l'heure", "À la demi-journée"],
+      "contact": "Contactez le docteur Joëlle DEBLANGEY au 0692 46 07 89 (sms), qui sera ravie de vous faire visiter ses espaces !"
+    },
+    "tarifs": {
+      "title": "Honoraires EMPC",
+      "slug": "/tarifs",
+      "drDeblangey": {
+        "titre": "Dr Joëlle DEBLANGEY - Docteur en médecine, certifiée en Psychothérapies",
+        "individuelles": [
+          {"prestation": "Entretien individuel (GESTALT et/ou TCC)", "duree": "55 min", "tarif": 75},
+          {"prestation": "Sexologie individuel", "duree": "55 min", "tarif": 75},
+          {"prestation": "Sexologie (avec partenaire)", "duree": "55 min", "tarif": 100},
+          {"prestation": "Nutrition comportementale", "duree": "30 min", "tarif": 55}
+        ],
+        "groupales": [
+          {"prestation": "Protocole de Méditation Thérapeutique MBCT", "format": "8 séances de 2h30 à 80€", "tarif": 640},
+          {"prestation": "Protocole de Nutrition Comportementale et Méditation (MECL)", "format": "8 séances", "tarif": 560}
+        ],
+        "note": "Professionnelle non conventionnée, en secteur 3, honoraires non remboursés par la CGSS, consulter vos options de mutuelle."
+      },
+      "therapiesCouplesFamilles": [
+        {"prestation": "Thérapie de couple", "duree": "1 heure", "tarif": 110},
+        {"prestation": "Thérapie familiale", "duree": "1h15", "tarif": 150}
+      ],
+      "moyensPaiement": ["Chèques", "Virement immédiat", "Espèces"],
+      "important": "TOUT RDV NON ANNULÉ par SMS AVANT 48H OUVRÉES NOUS RESTERA DÛ, merci de votre compréhension. (sauf cas particulier sur justificatif)"
+    },
+    "yoga": {
+      "title": "Intervenants - Yoga",
+      "slug": "/intervenants/yoga",
+      "hathaYoga": {
+        "description": "Par la pratique des postures (āsanas) et de la respiration (prānāyāma), le praticien tente d'augmenter son prāna (énergie subtile) afin de diminuer ses pensées et de maîtriser son mental.",
+        "source": "Āsanas et prānāyāma sont issus des sources traditionnelles indiennes (écrits de Swami Sivananda)."
+      },
+      "yogaNidra": {
+        "description": "Technique de détente profonde sur les plans physique, mental et psychique amenant progressivement à la libération intérieure.",
+        "formation": "Formation Institut Vidya, technique du sommeil éveillé : équivalent d'une relaxation complète.",
+        "tripleTension": [
+          "La tension musculaire ou physique",
+          "La tension émotionnelle",
+          "La tension mentale ou psychique"
+        ],
+        "effet": "Ces trois tensions étant principalement la cause des maladies, des inhibitions et de l'anxiété."
+      },
+      "citations": [
+        {
+          "texte": "Le Yoga Nidra est le tranquillisant Yogique, le moyen naturel d'établir l'harmonie dans tout l'organisme.",
+          "auteur": "Swami Satyananda"
+        },
+        {
+          "texte": "Une once de pratique vaut mieux que des tonnes de théorie.",
+          "auteur": "Swami Sivananda"
+        }
+      ]
+    }
+  },
+  "design": {
+    "colors": {
+      "primary": "#993366",
+      "secondary": "#2D5016",
+      "background": "#FDFBF7",
+      "text": "#1A1A1A"
+    },
+    "fonts": {
+      "heading": "Playfair Display, serif",
+      "body": "Inter, sans-serif"
+    }
+  },
+  "seo": {
+    "siteName": "EMPC - Espace Médical de Psychothérapies",
+    "defaultDescription": "Cabinet de psychothérapies et travail corporel à La Réunion. Dr Joëlle Deblangey - Gestalt, TCC, Nutrition, Sexologie, Méditation MBCT.",
+    "keywords": [
+      "psychothérapie La Réunion",
+      "gestalt thérapie",
+      "TCC",
+      "méditation MBCT",
+      "nutrition comportementale",
+      "sexologie",
+      "thérapie de couple",
+      "thérapie familiale",
+      "Dr Deblangey"
+    ]
+  }
+}

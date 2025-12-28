@@ -1,0 +1,58 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="nidraBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#E0DCD5"/>
+      <stop offset="50%" style="stop-color:#F0EBE5"/>
+      <stop offset="100%" style="stop-color:#E5E0D8"/>
+    </linearGradient>
+    <radialGradient id="nidraGlow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" style="stop-color:#5C6B4A;stop-opacity:0.08"/>
+      <stop offset="100%" style="stop-color:#5C6B4A;stop-opacity:0"/>
+    </radialGradient>
+    <filter id="nidraBlur">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+  </defs>
+
+  <rect width="100%" height="100%" fill="url(#nidraBg)"/>
+  <rect width="100%" height="100%" fill="url(#nidraGlow)"/>
+
+  <!-- Représentation Yoga Nidra: sommeil conscient -->
+  <g transform="translate(400, 300)" opacity="0.15">
+    <!-- Silhouette allongée (savasana) -->
+    <ellipse cx="0" cy="0" rx="180" ry="35" fill="#5C6B4A" opacity="0.4"/>
+    <circle cx="-150" cy="-10" r="25" fill="#5C6B4A" opacity="0.5"/>
+
+    <!-- Ondes de conscience/relaxation -->
+    <ellipse cx="0" cy="0" rx="200" ry="60" fill="none" stroke="#9CAF88" stroke-width="1.5" filter="url(#nidraBlur)"/>
+    <ellipse cx="0" cy="0" rx="230" ry="80" fill="none" stroke="#9CAF88" stroke-width="1" filter="url(#nidraBlur)"/>
+    <ellipse cx="0" cy="0" rx="260" ry="100" fill="none" stroke="#9CAF88" stroke-width="0.5" filter="url(#nidraBlur)"/>
+  </g>
+
+  <!-- Étoiles/points de conscience -->
+  <g fill="#8B7355" opacity="0.2">
+    <circle cx="200" cy="150" r="3"/>
+    <circle cx="600" cy="180" r="2"/>
+    <circle cx="150" cy="400" r="2"/>
+    <circle cx="650" cy="420" r="3"/>
+    <circle cx="300" cy="120" r="2"/>
+    <circle cx="500" cy="450" r="2"/>
+  </g>
+
+  <!-- Lune stylisée (sommeil) -->
+  <g transform="translate(650, 120)" opacity="0.12">
+    <path d="M0 0 A40 40 0 1 1 0 80 A30 30 0 1 0 0 0" fill="#8B7355"/>
+  </g>
+
+  <text x="400" y="490" text-anchor="middle" fill="#5C6B4A" font-family="Georgia, serif" font-size="20" letter-spacing="4" opacity="0.7">
+    YOGA NIDRA
+  </text>
+  <text x="400" y="520" text-anchor="middle" fill="#5C6B4A" font-family="Georgia, serif" font-size="12" letter-spacing="2" opacity="0.5">
+    SOMMEIL YOGIQUE CONSCIENT
+  </text>
+  <text x="400" y="560" text-anchor="middle" fill="#8B7355" font-family="sans-serif" font-size="12" opacity="0.5">
+    800 × 600 px
+  </text>
+
+  <rect x="20" y="20" width="760" height="560" fill="none" stroke="#5C6B4A" stroke-width="0.5" opacity="0.2" rx="4"/>
+</svg>

@@ -1,0 +1,51 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="meclBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F5F0E8"/>
+      <stop offset="100%" style="stop-color:#EDE3D8"/>
+    </linearGradient>
+    <radialGradient id="meclGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#8B7355;stop-opacity:0.12"/>
+      <stop offset="100%" style="stop-color:#8B7355;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="100%" height="100%" fill="url(#meclBg)"/>
+  <rect width="100%" height="100%" fill="url(#meclGlow)"/>
+
+  <!-- Représentation MECL: manger en conscience -->
+  <g transform="translate(400, 260)" opacity="0.2">
+    <!-- Bol/assiette stylisée -->
+    <ellipse cx="0" cy="30" rx="100" ry="50" fill="none" stroke="#8B7355" stroke-width="3"/>
+    <path d="M-100 30 Q-100 -30 0 -30 Q100 -30 100 30" fill="none" stroke="#8B7355" stroke-width="2"/>
+
+    <!-- Vapeur/conscience -->
+    <path d="M-30 -40 Q-20 -60 -30 -80" fill="none" stroke="#5C6B4A" stroke-width="2" opacity="0.6"/>
+    <path d="M0 -50 Q10 -70 0 -90" fill="none" stroke="#5C6B4A" stroke-width="2" opacity="0.6"/>
+    <path d="M30 -40 Q40 -60 30 -80" fill="none" stroke="#5C6B4A" stroke-width="2" opacity="0.6"/>
+
+    <!-- Cercles de pleine conscience autour -->
+    <circle cx="0" cy="0" r="130" fill="none" stroke="#9CAF88" stroke-width="1" stroke-dasharray="4 4"/>
+    <circle cx="0" cy="0" r="160" fill="none" stroke="#9CAF88" stroke-width="0.5" stroke-dasharray="2 6"/>
+  </g>
+
+  <!-- Points de conscience -->
+  <g transform="translate(400, 260)" opacity="0.15">
+    <circle cx="-130" cy="0" r="6" fill="#5C6B4A"/>
+    <circle cx="130" cy="0" r="6" fill="#5C6B4A"/>
+    <circle cx="0" cy="-130" r="6" fill="#5C6B4A"/>
+    <circle cx="0" cy="130" r="6" fill="#5C6B4A"/>
+  </g>
+
+  <text x="400" y="470" text-anchor="middle" fill="#8B7355" font-family="Georgia, serif" font-size="18" letter-spacing="4" opacity="0.7">
+    PROTOCOLE MECL
+  </text>
+  <text x="400" y="500" text-anchor="middle" fill="#8B7355" font-family="Georgia, serif" font-size="12" letter-spacing="2" opacity="0.5">
+    MANGER EN PLEINE CONSCIENCE
+  </text>
+  <text x="400" y="550" text-anchor="middle" fill="#8B7355" font-family="sans-serif" font-size="12" opacity="0.5">
+    800 × 600 px
+  </text>
+
+  <rect x="20" y="20" width="760" height="560" fill="none" stroke="#8B7355" stroke-width="0.5" opacity="0.3" rx="4"/>
+</svg>
