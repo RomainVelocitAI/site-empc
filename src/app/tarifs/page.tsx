@@ -4,6 +4,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 import Link from 'next/link';
 import Header from '@/components/layout/Header';
+import { SectionDivider, AccentLine } from '@/components/section-divider';
 
 // Animation variants
 const easeOutExpo: [number, number, number, number] = [0.16, 1, 0.3, 1];
@@ -214,8 +215,13 @@ export default function TarifsPage() {
         </motion.div>
       </section>
 
+      {/* ========== DIVIDER: Hero → Pricing ========== */}
+      <SectionDivider variant="curve" color="var(--empc-background)" height={80} />
+
       {/* Main Pricing Section */}
       <section className="relative pb-20 md:pb-32">
+        {/* Liseré doré en haut */}
+        <AccentLine color="var(--empc-gold)" position="top" thickness={3} variant="straight" />
         <div className="container-wide">
 
           {/* Dr Deblangey Section */}
@@ -428,8 +434,13 @@ export default function TarifsPage() {
         </div>
       </section>
 
+      {/* ========== DIVIDER: Pricing → CTA ========== */}
+      <SectionDivider variant="wave" color="var(--empc-cream)" height={70} className="opacity-40" />
+
       {/* CTA Section */}
       <section className="relative py-20 md:py-32 overflow-hidden">
+        {/* Liseré doré courbé en haut */}
+        <AccentLine color="var(--empc-gold)" position="top" thickness={3} variant="curved" />
         {/* Background */}
         <div className="absolute inset-0 bg-gradient-to-b from-[var(--empc-background)] via-[var(--empc-primary)]/5 to-[var(--empc-background)]" />
 

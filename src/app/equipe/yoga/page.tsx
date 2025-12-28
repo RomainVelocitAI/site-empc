@@ -5,6 +5,7 @@ import { motion, useScroll, useTransform, useInView } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import Header from '@/components/layout/Header';
+import { SectionDivider, AccentLine } from '@/components/section-divider';
 
 // Smooth easing
 const easeOutExpo: [number, number, number, number] = [0.16, 1, 0.3, 1];
@@ -422,8 +423,13 @@ export default function YogaPage() {
         </div>
       </section>
 
+      {/* ========== DIVIDER: Hero → Hatha ========== */}
+      <SectionDivider variant="curve" color="var(--empc-cream)" height={80} />
+
       {/* ========== HATHA YOGA SECTION ========== */}
       <RevealSection className="relative py-24 md:py-32 bg-[var(--empc-cream)]">
+        {/* Liseré doré en haut */}
+        <AccentLine color="var(--empc-gold)" position="top" thickness={3} variant="straight" />
         <div className="container-wide">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
 
@@ -519,8 +525,13 @@ export default function YogaPage() {
         </div>
       </RevealSection>
 
+      {/* ========== DIVIDER: Hatha → Nidra ========== */}
+      <SectionDivider variant="wave" color="var(--empc-background)" height={70} />
+
       {/* ========== YOGA NIDRA SECTION ========== */}
       <RevealSection className="relative py-24 md:py-32 overflow-hidden">
+        {/* Liseré doré à gauche */}
+        <AccentLine color="var(--empc-gold)" position="left" thickness={4} variant="straight" />
         {/* Background decoration */}
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-[var(--empc-sage)]/30 to-transparent" />
@@ -612,8 +623,13 @@ export default function YogaPage() {
         </div>
       </RevealSection>
 
+      {/* ========== DIVIDER: Nidra → Quotes ========== */}
+      <SectionDivider variant="diagonal-down" color="var(--empc-cream)" height={70} className="opacity-50" />
+
       {/* ========== QUOTES SECTION ========== */}
       <RevealSection className="relative py-24 md:py-32 bg-gradient-to-b from-[var(--empc-cream)]/50 to-[var(--empc-background)]">
+        {/* Liseré doré diagonal en haut */}
+        <AccentLine color="var(--empc-gold)" position="top" thickness={3} variant="diagonal" />
         <div className="container-narrow">
           {/* Section title */}
           <motion.div
@@ -645,8 +661,13 @@ export default function YogaPage() {
         </div>
       </RevealSection>
 
+      {/* ========== DIVIDER: Quotes → CTA ========== */}
+      <SectionDivider variant="curve-reverse" color="var(--empc-background)" height={60} />
+
       {/* ========== CTA SECTION ========== */}
       <RevealSection className="relative py-24 md:py-32 overflow-hidden">
+        {/* Liseré doré courbé en haut */}
+        <AccentLine color="var(--empc-gold)" position="top" thickness={3} variant="curved" />
         {/* Background effects */}
         <div className="absolute inset-0 pointer-events-none">
           <BreathingCircle

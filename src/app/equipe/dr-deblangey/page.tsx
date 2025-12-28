@@ -5,6 +5,7 @@ import { motion, useInView, useScroll, useTransform, useSpring } from 'framer-mo
 import Image from 'next/image';
 import Link from 'next/link';
 import { Layout } from '@/components/layout';
+import { SectionDivider, AccentLine } from '@/components/section-divider';
 
 // Images - tropical botanical aesthetic
 const IMAGES = {
@@ -508,8 +509,13 @@ export default function DrDeblangeyPage() {
         </motion.div>
       </section>
 
+      {/* ========== DIVIDER: Hero → Parcours ========== */}
+      <SectionDivider variant="curve" color="var(--empc-background)" height={80} />
+
       {/* ========== PARCOURS - GROWING TREE TIMELINE ========== */}
       <section className="py-32 relative overflow-hidden">
+        {/* Liseré doré en haut */}
+        <AccentLine color="var(--empc-gold)" position="top" thickness={3} variant="straight" />
         {/* Background texture */}
         <div
           className="absolute inset-0 opacity-30"
@@ -627,11 +633,16 @@ export default function DrDeblangeyPage() {
         </div>
       </section>
 
+      {/* ========== DIVIDER: Parcours → Formations ========== */}
+      <SectionDivider variant="diagonal-down" color="var(--empc-cream)" height={70} />
+
       {/* ========== FORMATIONS - GARDEN OF EXPERTISE ========== */}
       <section
         className="py-32 relative"
         style={{ background: 'linear-gradient(180deg, var(--empc-background) 0%, var(--empc-cream) 50%, var(--empc-background) 100%)' }}
       >
+        {/* Liseré doré à gauche */}
+        <AccentLine color="var(--empc-gold)" position="left" thickness={4} variant="straight" />
         <div className="container-wide">
           {/* Section header */}
           <motion.div
@@ -733,8 +744,13 @@ export default function DrDeblangeyPage() {
         </div>
       </section>
 
+      {/* ========== DIVIDER: Formations → Aujourd'hui ========== */}
+      <SectionDivider variant="wave" color="var(--empc-background)" height={80} />
+
       {/* ========== AUJOURD'HUI - FLOWERING PRESENT ========== */}
       <section className="py-32 relative overflow-hidden">
+        {/* Liseré doré diagonal en haut */}
+        <AccentLine color="var(--empc-gold)" position="top" thickness={3} variant="diagonal" />
         {/* Ambient background */}
         <div
           className="absolute inset-0"
@@ -828,8 +844,13 @@ export default function DrDeblangeyPage() {
         </div>
       </section>
 
+      {/* ========== DIVIDER: Aujourd'hui → MBCT ========== */}
+      <SectionDivider variant="curve-reverse" color="var(--empc-cream)" height={60} className="opacity-50" />
+
       {/* ========== ATELIER MBCT - SPECIAL SANCTUARY ========== */}
-      <section className="py-20">
+      <section className="py-20 relative">
+        {/* Liseré doré à droite */}
+        <AccentLine color="var(--empc-gold)" position="right" thickness={4} variant="straight" />
         <div className="container-narrow">
           <motion.div
             className="relative rounded-[3rem] overflow-hidden"
@@ -932,8 +953,13 @@ export default function DrDeblangeyPage() {
         </div>
       </section>
 
+      {/* ========== DIVIDER: MBCT → Contact ========== */}
+      <SectionDivider variant="diagonal-up" color="var(--empc-background)" height={70} />
+
       {/* ========== CONTACT - PEACEFUL GARDEN ========== */}
       <section className="py-32 relative overflow-hidden">
+        {/* Liseré doré courbé en haut */}
+        <AccentLine color="var(--empc-gold)" position="top" thickness={3} variant="curved" />
         {/* Ambient gradient */}
         <div
           className="absolute inset-0"

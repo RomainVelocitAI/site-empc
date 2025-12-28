@@ -6,6 +6,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Layout } from '@/components/layout';
 import { FAQSection, FAQItem } from '@/components/faq-sections';
+import { SectionDivider, AccentLine } from '@/components/section-divider';
 
 // Custom easing curves
 const easeOutExpo: [number, number, number, number] = [0.16, 1, 0.3, 1];
@@ -469,8 +470,13 @@ export default function TherapyPageLayout({
         </motion.div>
       </section>
 
+      {/* ========== DIVIDER: Hero → Introduction ========== */}
+      <SectionDivider variant="curve" color="var(--empc-background)" height={80} />
+
       {/* ========== INTRODUCTION ========== */}
       <AnimatedSection className="py-24 relative overflow-hidden">
+        {/* Liseré doré en haut */}
+        <AccentLine color="var(--empc-gold)" position="top" thickness={3} variant="straight" />
         <div className="container-narrow">
           {introQuote && (
             <motion.blockquote
@@ -501,9 +507,16 @@ export default function TherapyPageLayout({
         </div>
       </AnimatedSection>
 
+      {/* ========== DIVIDER: Introduction → Definition ========== */}
+      {definitionContent && (
+        <SectionDivider variant="diagonal-down" color="var(--empc-cream)" height={60} className="opacity-50" />
+      )}
+
       {/* ========== DEFINITION (if provided) ========== */}
       {definitionContent && (
-        <AnimatedSection className="py-20 bg-gradient-to-b from-[var(--empc-cream)]/50 to-transparent">
+        <AnimatedSection className="py-20 bg-gradient-to-b from-[var(--empc-cream)]/50 to-transparent relative">
+          {/* Liseré doré à gauche */}
+          <AccentLine color="var(--empc-gold)" position="left" thickness={4} variant="straight" />
           <div className="container-narrow">
             {definitionTitle && (
               <motion.h2
@@ -520,9 +533,16 @@ export default function TherapyPageLayout({
         </AnimatedSection>
       )}
 
+      {/* ========== DIVIDER: Definition → Axes ========== */}
+      {axes && axes.length > 0 && (
+        <SectionDivider variant="wave" color="var(--empc-background)" height={70} />
+      )}
+
       {/* ========== AXES DE TRAVAIL (if provided) ========== */}
       {axes && axes.length > 0 && (
-        <AnimatedSection className="py-24">
+        <AnimatedSection className="py-24 relative">
+          {/* Liseré doré diagonal en haut */}
+          <AccentLine color="var(--empc-gold)" position="top" thickness={3} variant="diagonal" />
           <div className="container-wide">
             <motion.div
               className="text-center mb-16"
@@ -551,6 +571,11 @@ export default function TherapyPageLayout({
             </div>
           </div>
         </AnimatedSection>
+      )}
+
+      {/* ========== DIVIDER: Axes → Practice ========== */}
+      {practiceItems && practiceItems.length > 0 && (
+        <SectionDivider variant="curve-reverse" color="var(--empc-cream)" height={60} className="opacity-30" />
       )}
 
       {/* ========== LA PRATIQUE (if provided) ========== */}
@@ -596,9 +621,16 @@ export default function TherapyPageLayout({
         </AnimatedSection>
       )}
 
+      {/* ========== DIVIDER: Practice → Session ========== */}
+      {sessionContent && (
+        <SectionDivider variant="diagonal-up" color="var(--empc-cream)" height={70} className="opacity-30" />
+      )}
+
       {/* ========== SESSION CONTENT (if provided) ========== */}
       {sessionContent && (
-        <AnimatedSection className="py-24 bg-[var(--empc-cream)]/30">
+        <AnimatedSection className="py-24 bg-[var(--empc-cream)]/30 relative">
+          {/* Liseré doré à droite */}
+          <AccentLine color="var(--empc-gold)" position="right" thickness={4} variant="straight" />
           <div className="container-narrow">
             <motion.h2
               className="font-heading text-3xl mb-10 text-center"
@@ -613,8 +645,13 @@ export default function TherapyPageLayout({
         </AnimatedSection>
       )}
 
+      {/* ========== DIVIDER: Session → Indications ========== */}
+      <SectionDivider variant="wave" color="var(--empc-background)" height={80} />
+
       {/* ========== INDICATIONS ========== */}
       <AnimatedSection className="py-24 relative overflow-hidden">
+        {/* Liseré doré diagonal en haut */}
+        <AccentLine color="var(--empc-gold)" position="top" thickness={3} variant="diagonal" />
         <div className="container-wide">
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             {/* Title */}
@@ -662,8 +699,13 @@ export default function TherapyPageLayout({
         </div>
       </AnimatedSection>
 
+      {/* ========== DIVIDER: Indications → Tarifs ========== */}
+      <SectionDivider variant="curve" color="var(--empc-cream)" height={70} className="opacity-50" />
+
       {/* ========== TARIFS ========== */}
       <AnimatedSection className="py-24 relative">
+        {/* Liseré doré en haut */}
+        <AccentLine color="var(--empc-gold)" position="top" thickness={3} variant="straight" />
         <div
           className="absolute inset-0"
           style={{
@@ -732,9 +774,16 @@ export default function TherapyPageLayout({
         </div>
       </AnimatedSection>
 
+      {/* ========== DIVIDER: Tarifs → FAQ ========== */}
+      {faqs && faqs.length > 0 && (
+        <SectionDivider variant="diagonal-down" color="var(--empc-cream)" height={80} />
+      )}
+
       {/* ========== FAQ SECTION (if provided) ========== */}
       {faqs && faqs.length > 0 && (
-        <AnimatedSection className="py-24 bg-[var(--empc-cream)]">
+        <AnimatedSection className="py-24 bg-[var(--empc-cream)] relative">
+          {/* Liseré doré à gauche */}
+          <AccentLine color="var(--empc-gold)" position="left" thickness={4} variant="straight" />
           <div className="container-wide">
             <FAQSection
               faqs={faqs}
@@ -745,6 +794,11 @@ export default function TherapyPageLayout({
             />
           </div>
         </AnimatedSection>
+      )}
+
+      {/* ========== DIVIDER: FAQ → References ========== */}
+      {references && references.length > 0 && (
+        <SectionDivider variant="curve-reverse" color="var(--empc-background)" height={60} />
       )}
 
       {/* ========== REFERENCES (if provided) ========== */}
@@ -791,8 +845,13 @@ export default function TherapyPageLayout({
       {/* Additional custom content */}
       {children}
 
+      {/* ========== DIVIDER: References → Contact CTA ========== */}
+      <SectionDivider variant="wave" color="var(--empc-cream)" height={70} className="opacity-40" />
+
       {/* ========== CONTACT CTA ========== */}
       <AnimatedSection className="py-24 relative overflow-hidden">
+        {/* Liseré doré courbé en haut */}
+        <AccentLine color="var(--empc-gold)" position="top" thickness={3} variant="curved" />
         <div
           className="absolute inset-0"
           style={{

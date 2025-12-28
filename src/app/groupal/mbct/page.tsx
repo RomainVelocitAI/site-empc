@@ -6,6 +6,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Layout } from '@/components/layout';
 import { ThumbnailCarousel, CarouselItem } from '@/components/framer-thumbnail-carousel';
+import { SectionDivider, AccentLine } from '@/components/section-divider';
 
 // Images pour le carousel méditation
 const meditationImages: CarouselItem[] = [
@@ -416,8 +417,13 @@ export default function MBCTPage() {
         </motion.div>
       </section>
 
+      {/* ========== DIVIDER: Hero → Introduction ========== */}
+      <SectionDivider variant="curve" color="var(--empc-background)" height={80} />
+
       {/* ========== INTRODUCTION ========== */}
       <section className="py-24 relative overflow-hidden">
+        {/* Liseré doré en haut */}
+        <AccentLine color="var(--empc-gold)" position="top" thickness={3} variant="straight" />
         <div className="container-narrow">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -487,8 +493,13 @@ export default function MBCTPage() {
         </div>
       </section>
 
+      {/* ========== DIVIDER: Introduction → Indications ========== */}
+      <SectionDivider variant="diagonal-down" color="var(--empc-cream)" height={70} className="opacity-50" />
+
       {/* ========== INDICATIONS ========== */}
       <section className="py-24 relative overflow-hidden bg-gradient-to-b from-[var(--empc-cream)]/30 to-transparent">
+        {/* Liseré doré à gauche */}
+        <AccentLine color="var(--empc-gold)" position="left" thickness={4} variant="straight" />
         <div className="container-wide">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -513,8 +524,13 @@ export default function MBCTPage() {
         </div>
       </section>
 
+      {/* ========== DIVIDER: Indications → Programme ========== */}
+      <SectionDivider variant="wave" color="var(--empc-background)" height={80} />
+
       {/* ========== PROGRAMME 8 SÉANCES ========== */}
       <section ref={programRef} className="py-24 relative">
+        {/* Liseré doré diagonal en haut */}
+        <AccentLine color="var(--empc-gold)" position="top" thickness={3} variant="diagonal" />
         <div className="container-wide">
           <div className="grid lg:grid-cols-2 gap-20 items-start">
             {/* Left - Title & description */}
@@ -570,8 +586,13 @@ export default function MBCTPage() {
         </div>
       </section>
 
+      {/* ========== DIVIDER: Programme → Organisation ========== */}
+      <SectionDivider variant="curve-reverse" color="var(--empc-cream)" height={60} className="opacity-50" />
+
       {/* ========== ORGANISATION & TARIFS ========== */}
       <section className="py-24 relative overflow-hidden">
+        {/* Liseré doré à droite */}
+        <AccentLine color="var(--empc-gold)" position="right" thickness={4} variant="straight" />
         <div className="absolute inset-0 bg-gradient-to-br from-[var(--empc-sage)]/5 via-transparent to-[var(--empc-primary)]/5" />
 
         <div className="container-narrow relative z-10">
@@ -689,6 +710,9 @@ export default function MBCTPage() {
         </div>
       </section>
 
+      {/* ========== DIVIDER: Organisation → References ========== */}
+      <SectionDivider variant="diagonal-up" color="var(--empc-background)" height={60} />
+
       {/* ========== REFERENCES ========== */}
       <section className="py-16 border-t border-[var(--empc-sage)]/10">
         <div className="container-narrow">
@@ -744,6 +768,9 @@ export default function MBCTPage() {
         </div>
       </section>
 
+      {/* ========== DIVIDER: References → Galerie ========== */}
+      <SectionDivider variant="wave" color="var(--empc-cream)" height={70} className="opacity-40" />
+
       {/* ========== GALERIE - Thumbnail Carousel ========== */}
       <ThumbnailCarousel
         items={meditationImages}
@@ -753,8 +780,13 @@ export default function MBCTPage() {
         className="bg-[var(--empc-cream)]/30"
       />
 
+      {/* ========== DIVIDER: Galerie → Contact ========== */}
+      <SectionDivider variant="curve" color="var(--empc-background)" height={80} />
+
       {/* ========== CONTACT CTA ========== */}
       <section className="py-24 relative overflow-hidden">
+        {/* Liseré doré courbé en haut */}
+        <AccentLine color="var(--empc-gold)" position="top" thickness={3} variant="curved" />
         <div className="absolute inset-0">
           <BreathingCircle className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px]" />
         </div>
