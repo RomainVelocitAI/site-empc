@@ -1021,8 +1021,8 @@ export default function DrDeblangeyPage() {
               viewport={{ once: true }}
               transition={{ delay: 0.4 }}
             >
-              <span className="text-[var(--empc-text)]">Cultivons votre </span>
-              <span className="text-[var(--empc-primary)] italic">bien-être</span>
+              <span className="text-[var(--empc-text)]">Prenons soin de votre </span>
+              <span className="text-[var(--empc-primary)] italic">santé</span>
             </motion.h2>
 
             <motion.p

@@ -423,23 +423,29 @@ export default function Home() {
                         transition={{ delay: 0.8, duration: 0.8 }}
                       />
                       <span className="text-white/90 text-sm tracking-[0.3em] uppercase font-medium">
-                        Psychothérapies & Bien-être
+                        Santé Mentale & Psychothérapies
                       </span>
                     </motion.div>
 
-                    {/* Main Title - Dramatic split */}
+                    {/* Main Title - EMPC + Full Name */}
                     <h1 className="font-heading text-white mb-8">
-                      <motion.span
-                        className="block text-display"
-                        variants={fadeUpVariants}
-                      >
-                        Espace Médical de
-                      </motion.span>
                       <motion.span
                         className="block text-huge text-[var(--empc-gold)] italic"
                         variants={fadeUpVariants}
                       >
-                        Psychothérapies
+                        EMPC
+                      </motion.span>
+                      <motion.span
+                        className="block text-display"
+                        variants={fadeUpVariants}
+                      >
+                        Espace Médical de Psychothérapies
+                      </motion.span>
+                      <motion.span
+                        className="block text-xl md:text-2xl text-white/90 font-normal mt-2"
+                        variants={fadeUpVariants}
+                      >
+                        et de Travail Corporel Associé
                       </motion.span>
                     </h1>
 

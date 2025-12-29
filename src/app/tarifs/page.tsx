@@ -193,7 +193,7 @@ export default function TarifsPage() {
             >
               Investir dans votre{' '}
               <span className="relative inline-block">
-                <span className="relative z-10 text-[var(--empc-primary)]">bien-être</span>
+                <span className="relative z-10 text-[var(--empc-primary)]">santé</span>
                 <motion.span
                   className="absolute bottom-2 left-0 right-0 h-3 bg-[var(--empc-sage)]/30 -z-0"
                   initial={{ scaleX: 0 }}

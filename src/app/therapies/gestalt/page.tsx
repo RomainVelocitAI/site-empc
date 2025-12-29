@@ -10,7 +10,7 @@ export default function GestaltPage() {
       title="La Gestalt-Thérapie"
       subtitle="Mettre en forme ce que vous vivez pour mieux vous comprendre et avancer"
       heroImage="https://images.unsplash.com/photo-1499209974431-9dddcece7f88?w=1200&q=80"
-      heroImageAlt="Thérapie et bien-être"
+      heroImageAlt="Thérapie et santé mentale"
       accentColor="var(--empc-primary)"
 
       // Introduction

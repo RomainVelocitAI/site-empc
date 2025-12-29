@@ -43,7 +43,6 @@ export const defaultMetadata: Metadata = {
     'thérapie familiale',
     'Dr Deblangey',
     'EMPC',
-    'bien-être',
     'santé mentale',
     'pleine conscience',
   ],
@@ -66,7 +65,7 @@ export const defaultMetadata: Metadata = {
     locale: 'fr_FR',
     url: siteConfig.url,
     siteName: siteConfig.fullName,
-    title: 'EMPC | Psychothérapies & Bien-être · La Réunion',
+    title: 'EMPC | Psychothérapies & Santé Mentale · La Réunion',
     description: siteConfig.description,
     images: [
       {
@@ -98,7 +97,7 @@ export const defaultMetadata: Metadata = {
 export const pageMetadata: Record<string, Metadata> = {
   home: {
     title: 'EMPC | Espace Médical de Psychothérapies · La Réunion',
-    description: 'Un sanctuaire thérapeutique à La Réunion. Dr Joëlle Deblangey accompagne votre chemin vers le bien-être à travers la Gestalt-thérapie, TCC, méditation MBCT et approches corporelles.',
+    description: 'Un sanctuaire thérapeutique à La Réunion. Dr Joëlle Deblangey accompagne votre chemin vers la santé mentale à travers la Gestalt-thérapie, TCC, méditation MBCT et approches corporelles.',
   },
   drDeblangey: {
     title: 'Dr Joëlle Deblangey - Médecin Psychothérapeute',
