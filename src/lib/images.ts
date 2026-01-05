@@ -46,7 +46,7 @@ export const HERO_IMAGES: Record<string, ImageMetadata> = {
 
 export const PORTRAIT_IMAGES: Record<string, ImageMetadata> = {
   joelleDeblangey: {
-    src: '/images/portraits/joelle-deblangey.svg',
+    src: '/images/portraits/joelle-deblangey.png',
     alt: 'Dr Joëlle Deblangey',
     altFr: 'Portrait du Dr Joëlle Deblangey, médecin psychothérapeute',
     width: 400,
@@ -123,6 +123,37 @@ export const GROUPAL_IMAGES: Record<string, ImageMetadata> = {
     width: 800,
     height: 600,
     description: 'Image illustrant le protocole MECL pour les troubles alimentaires',
+  },
+};
+
+// ============================================
+// CABINET / BUNGALOW
+// ============================================
+
+export const CABINET_IMAGES: Record<string, ImageMetadata> = {
+  exterieur: {
+    src: '/images/cabinet/bungalow-exterieur.jpg',
+    alt: 'EMPC Bungalow exterior',
+    altFr: 'Bungalow EMPC - Entrée du cabinet au 41 bis',
+    width: 800,
+    height: 600,
+    description: 'Vue extérieure du bungalow bleu coloré',
+  },
+  interieur: {
+    src: '/images/cabinet/bungalow-interieur.jpg',
+    alt: 'EMPC consultation room',
+    altFr: 'Espace de consultation EMPC - Intérieur chaleureux',
+    width: 800,
+    height: 600,
+    description: 'Intérieur du bungalow avec espace de consultation',
+  },
+  salleEau: {
+    src: '/images/cabinet/bungalow-salle-eau.jpg',
+    alt: 'EMPC bathroom',
+    altFr: 'Salle d\'eau du bungalow EMPC',
+    width: 800,
+    height: 600,
+    description: 'Lavabo et WC du bungalow',
   },
 };
 
@@ -230,6 +261,7 @@ const IMAGES = {
   portraits: PORTRAIT_IMAGES,
   therapies: THERAPY_IMAGES,
   groupal: GROUPAL_IMAGES,
+  cabinet: CABINET_IMAGES,
   yoga: YOGA_IMAGES,
   external: EXTERNAL_IMAGES,
 };

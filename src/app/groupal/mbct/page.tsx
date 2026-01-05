@@ -13,8 +13,8 @@ const meditationImages: CarouselItem[] = [
   { id: 1, url: 'https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&q=80', title: 'Méditation guidée', description: 'Séances en petit groupe' },
   { id: 2, url: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&q=80', title: 'Pratique du yoga', description: 'Postures douces et respirations' },
   { id: 3, url: 'https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=800&q=80', title: 'Connexion à la nature', description: 'Exercices en plein air' },
-  { id: 4, url: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=800&q=80', title: 'Moments de calme', description: 'Espaces de respiration' },
-  { id: 5, url: 'https://images.unsplash.com/photo-1508672019048-805c876b67e2?w=800&q=80', title: 'Bord de mer', description: 'La Réunion, cadre idéal' },
+  { id: 4, url: '/images/cabinet/bungalow-interieur.jpg', title: 'Espace de consultation', description: 'Un cadre chaleureux et apaisant' },
+  { id: 5, url: '/images/cabinet/bungalow-exterieur.jpg', title: 'Le bungalow EMPC', description: 'La Réunion, cadre idéal' },
 ];
 
 // Custom easing

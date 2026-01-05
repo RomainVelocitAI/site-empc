@@ -19,7 +19,7 @@ const IMAGES = {
   nature: 'https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=1200&q=80', // sunlight through leaves
   wellness: 'https://images.unsplash.com/photo-1600618528240-fb9fc964b853?w=800&q=80', // spa/wellness
   tropical: 'https://images.unsplash.com/photo-1559827291-72ee739d0d9a?w=1200&q=80', // tropical plants
-  portrait: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=800&q=80', // professional woman doctor
+  portrait: '/images/portraits/joelle-deblangey.png', // Dr Joëlle Deblangey
 };
 
 // Custom easing
@@ -320,7 +320,7 @@ const teamMembers: TeamMember[] = [
     name: "Dr Joëlle Deblangey",
     title: "Médecin Psychothérapeute · Fondatrice",
     description: "Médecin psychothérapeute certifiée avec plus de 40 ans d'expérience. Formée en Gestalt-thérapie, TCC, thérapie systémique familiale et sexologie. Instructrice MBCT certifiée niveau 3.",
-    imageUrl: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=800&q=80",
+    imageUrl: "/images/portraits/joelle-deblangey.png",
     specialties: ["Gestalt-Thérapie", "TCC", "Sexologie", "MBCT"],
     phone: "0692460789",
     profileUrl: "/equipe/dr-deblangey",
@@ -607,8 +607,8 @@ export default function Home() {
                   >
                     <div className="relative aspect-[4/5] rounded-[3rem] overflow-hidden">
                       <Image
-                        src={IMAGES.nature}
-                        alt="Nature healing"
+                        src="/images/cabinet/bungalow-interieur.jpg"
+                        alt="Espace de consultation EMPC"
                         fill
                         className="object-cover img-zoom"
                       />

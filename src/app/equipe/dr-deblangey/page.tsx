@@ -9,7 +9,7 @@ import { SectionDivider, AccentLine } from '@/components/section-divider';
 
 // Images - tropical botanical aesthetic
 const IMAGES = {
-  portrait: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=800&q=80',
+  portrait: '/images/portraits/joelle-deblangey.png',
   botanical: 'https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=1600&q=80',
   leaves: 'https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?w=1200&q=80',
 };
