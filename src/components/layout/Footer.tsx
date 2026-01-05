@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const footerNavigation = {
   main: [
@@ -32,24 +33,18 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-2">
             <motion.div
-              className="flex items-center gap-3 mb-6"
+              className="mb-6"
               whileHover={{ x: 5 }}
             >
-              <div
-                className="w-12 h-12 flex items-center justify-center text-white font-heading text-xl"
-                style={{
-                  background: 'var(--empc-primary)',
-                  borderRadius: '60% 40% 50% 50% / 50% 60% 40% 50%',
-                }}
-              >
-                E
-              </div>
-              <div>
-                <span className="font-heading text-xl block">EMPC</span>
-                <span className="text-xs tracking-[0.15em] uppercase text-[var(--empc-gold)]">
-                  La Réunion
-                </span>
-              </div>
+              <Link href="/">
+                <Image
+                  src="/images/logo-empc.png"
+                  alt="EMPC - Espace Médical de Psychothérapies et de travail Corporel associé"
+                  width={200}
+                  height={67}
+                  className="h-14 w-auto"
+                />
+              </Link>
             </motion.div>
             <p className="opacity-60 max-w-sm leading-relaxed mb-6">
               Espace Médical de Psychothérapies et de Travail Corporel Associé.

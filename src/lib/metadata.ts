@@ -69,7 +69,7 @@ export const defaultMetadata: Metadata = {
     description: siteConfig.description,
     images: [
       {
-        url: '/images/og-empc.jpg',
+        url: '/og-empc.png',
         width: 1200,
         height: 630,
         alt: 'EMPC - Espace Médical de Psychothérapies à La Réunion',

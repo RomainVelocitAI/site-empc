@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
+import Image from 'next/image';
 import { navigation, NavItem } from './Header';
 
 // Custom easing
@@ -118,18 +119,15 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
             <div className="h-full flex flex-col">
               {/* Header */}
               <div className="flex items-center justify-between p-6 border-b border-black/5">
-                <div className="flex items-center gap-3">
-                  <div
-                    className="w-10 h-10 flex items-center justify-center text-white font-heading text-lg"
-                    style={{
-                      background: 'var(--empc-primary)',
-                      borderRadius: '60% 40% 50% 50% / 50% 60% 40% 50%',
-                    }}
-                  >
-                    E
-                  </div>
-                  <span className="font-heading text-lg">EMPC</span>
-                </div>
+                <Link href="/" onClick={onClose}>
+                  <Image
+                    src="/images/logo-empc.png"
+                    alt="EMPC"
+                    width={140}
+                    height={47}
+                    className="h-10 w-auto"
+                  />
+                </Link>
               </div>
 
               {/* Navigation */}
